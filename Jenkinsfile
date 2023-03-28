@@ -3,7 +3,7 @@ pipeline{
     agent any
 
     environment {
-        DOCKERHUB_CREDENTIALS=credentials('dockerhub-ra1mova')
+        DOCKERHUB_CREDENTIALS=credentials('dockerhub-roza')
     }
 
     stages {
