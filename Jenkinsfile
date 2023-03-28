@@ -11,7 +11,7 @@ pipeline{
         stage('Build') {
 
             steps {
-                sh 'sudo docker build -t ra1mova/awesome-cat-frontend awesome_cats_frontend'
+                sh 'docker build -t ra1mova/awesome-cat-frontend awesome_cats_frontend'
             }
         }
         stage('Build2') {
