@@ -11,13 +11,13 @@ pipeline{
         stage('Build') {
 
             steps {
-                sh 'sudo docker build -t ra1mova/awesome-cat-front awesome_cats_frontend'
+                sh 'sudo docker build -t ra1mova/awesome-cat-frontend awesome_cats_frontend'
             }
         }
         stage('Build2') {
 
             steps {
-                sh 'sudo docker build -t ra1mova/awesome-cat-back awesome_cats_backend'
+                sh 'sudo docker build -t ra1mova/awesome-cat-backend awesome_cats_backend'
             }
         }
         stage('Login') {
@@ -30,13 +30,13 @@ pipeline{
         stage('Push') {
 
             steps {
-                sh 'sudo docker push ra1mova/awesome-cat-front'
+                sh 'sudo docker push ra1mova/awesome-cat-frontend'
             }
         }
         stage('Push2') {
 
             steps {
-                sh 'sudo docker push ra1mova/awesome-cat-back'
+                sh 'sudo docker push ra1mova/awesome-cat-backend'
             }
         }
     }
